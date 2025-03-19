@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มรับสมัครศิษย์เก่า IT + IS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">แบบฟอร์มรับสมัครศิษย์เก่า IT + IS</h1>
+            <p class="text-gray-600">กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง</p>
+        </header>
+
+        <form action="#" method="post" enctype="multipart/form-data" class="bg-white p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label for="fullName" class="block text-gray-700 font-medium">ชื่อ-สกุล:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="ระบุชื่อ-สกุลของคุณ" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+            <div class="mb-4">
+                <label for="studentID" class="block text-gray-700 font-medium">รหัสนักศึกษา:</label>
+                <input type="text" id="studentID" name="studentID" placeholder="ระบุรหัสนักศึกษา" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+            <div class="mb-4">
+                <label for="gender" class="block text-gray-700 font-medium">เพศ:</label>
+                <select id="gender" name="gender" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="male">ชาย</option>
+                    <option value="female">หญิง</option>
+                    <option value="other">อื่นๆ</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="admissionYear" class="block text-gray-700 font-medium">ปีการศึกษาที่เข้าศึกษา:</label>
+                <input type="number" id="admissionYear" name="admissionYear" placeholder="ระบุปีการศึกษา" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+            <div class="mb-4">
+                <label for="address" class="block text-gray-700 font-medium">ที่อยู่:</label>
+                <textarea id="address" name="address" rows="4" placeholder="ระบุที่อยู่ของคุณ" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-medium">อีเมล:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 font-medium">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" placeholder="ระบุเบอร์โทรศัพท์" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+            <div class="mb-4">
+                <label for="program" class="block text-gray-700 font-medium">ชื่อหลักสูตร:</label>
+                <select id="program" name="program" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="it">IT</option>
+                    <option value="is">IS</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="currentJob" class="block text-gray-700 font-medium">อาชีพปัจจุบัน:</label>
+                <input type="text" id="currentJob" name="currentJob" placeholder="ระบุอาชีพปัจจุบัน" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+            <div class="mb-4">
+                <label for="workPlace" class="block text-gray-700 font-medium">สถานที่ทำงาน:</label>
+                <input type="text" id="workPlace" name="workPlace" placeholder="ระบุชื่อบริษัทและที่อยู่" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+            <div class="mb-4">
+                <label for="jobType" class="block text-gray-700 font-medium">ประเภทงานที่ทำ:</label>
+                <select id="jobType" name="jobType" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="webDeveloper">Web Developer</option>
+                    <option value="sa">SA</option>
+                    <option value="graphicDesign">Graphic Design</option>
+                    <option value="digitalMarketing">Digital Marketing</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="photo" class="block text-gray-700 font-medium">อัปโหลดรูปถ่าย:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+            <div class="flex justify-between">
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">ส่งข้อมูล</button>
+                <button type="button" onclick="window.location.href='index.html'" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="text-center mt-8">
+        <p>&copy; 2025 เจษฎา เรืองเอียด</p>
+    </footer>
+</body>
+</html>
